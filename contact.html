@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_zEl53syYWsBMXMQx29X7_kGuZvU1N8E&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+    <script>
+      function initMap() {
+        const bislett = { lat: 59.919642, lng: 10.735928 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: bislett,
+        });
+        const marker = new google.maps.Marker({
+          position: bislett,
+          map: map,
+        });
+      }
+    </script>
+
+    <link rel="icon" href="img/breaking.svg" type="image/svg+xml" sizes="any" alt="Our Logo depicts a chain being Broken - Icon is Made by Freepik and used under an open license.">
+
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content=
     "width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>
-      Productive Prisoners Project
+      Contact Information for The Meaningful Atonement Programme.
     </title>
   </head>
   <body>
     <ul class="navbar">
       <li>
-        <a href="index.html">Home</a>
+        <a href="index.html" title="Home">Home</a>
       </li>
       <li>
-        <a href="about.html">About</a>
+        <a href="about.html" title="About">About</a>
       </li>
       <li>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html" title="Projects">Projects</a>
       </li>
       <li>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" title="Contact">Contact</a>
+      </li>
+      <li>
+        <a href="careers.html" title="Careers">Careers</a>
       </li>
     </ul>
     <div class="grid-container">
-      <div class="grid-1-3">
+      <div class="grid-1-3" style="text-align: left;">
         <h1>
-          The Useful Prisoners Project
+          Contact Information
         </h1><br>
         <h2>
-          We want to change the approach to sentencing.
+          We welcome all requests and are eagerly awaiting to give you a resonse!.
         </h2><br>
-        <h3>
-          Because time spent alone in a cell is wasting a resource
-          that can benefit us all.
-        </h3>
-        <p>
-          When a person is sentenced to prison, you can look at it
-          as he owes society a portion of his time. However, todays
-          prison industry is poorly suited to make sure that the
-          time someone spends in jail is actually invested in a
-          manner that is beneficial to the society in general.
-        </p>
+
+        <h3>E-mail: <a href="mailto:s348705@oslomet.no">S348705@OsloMet.no</a> This is the primary E-mail address for getting in touch with us.</h3>
+        <br>
+        <h3>Phone: <a href="tel:+4792163696">92164696</a>This is the Phone Number to our Main Office in Oslo, Norway. The phone will be answered between 09:00-15:00 CET.</h3>
+        <br>
+        <h3>Address:</h3>
+        <br>
+        <h4>Our Offices are Located at Pilestredet 35, Oslo, Norway.</h4>
+        <br>
+        <p>See the Map Below for Directions and travel Routes to our Offices.</p>
+
+        <div class="grid-3-4">
+          <div id="map">
+
+        </div>
+        </div>
+
       </div>
-    </div>
-    <div class="flex-container">
-      <div class="flex-item" style="flex-grow: 2">
-        <h2>
-          Philosophy
-        </h2>
-        <p>
-          We try to help countries rethink their approach to how
-          punishment for non violent offences should be completed.
-          By imagining the time each person owes as an asset that
-          can be reinvested into the local-, regional, or even
-          international environment - we have identified a number
-          of ways in which the conventional system of sentencing
-          can be repurposed to make sure that time doe not go to
-          waste but rather will benefit us all.
-        </p>
-      </div>
-      <div class="flex-item-img1" style="flex-grow: 1"><span role="img" aria-label="Image of a chain being broken"> </span></div>
-      <div class="flex-item" style="flex-grow: 1">
-        Contact
-      </div>
-    </div>
-    <div class="flex-container">
-      <div class="flex-item" style="flex-grow: 3">
-        News
-      </div>
-      <div class="flex-item-img2" style="flex-grow: 1"><span role="img" aria-label="Image of a chain being broken"> </span></div>
 
 
-      <div class="flex-item" style="flex-grow: 1">
-        Careers
-      </div>
-    </div>
 
+    <div class="footer">
+      <p>
+        The Meaningful Atonement Programme - © 2020 <img src=
+        "img/breaking.svg" alt=
+        "Our Logo depicts a chain being Broken - Icon is Made by Freepik and used under an open license.">
+      </p>
+    </div>
   </body>
 </html>
