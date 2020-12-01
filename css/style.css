@@ -1,0 +1,294 @@
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin-bottom: 100px;
+  margin-top: 0px
+/*  background-image: url("../img/chainbottom.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 20%;*/
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0;
+  background: #313030;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+.navbar img {
+  width: auto;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.navbar a {
+  text-decoration: none;
+  display: block;
+  padding: 1.5em;
+  color: white;
+  font-family: abel;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.navbar a:hover {
+  background: #1e77c8;
+}
+
+h1 {
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+.flex-item {
+  background: #1e77c8;
+  width: 200px;
+  margin: 1%;
+  line-height: 25px;
+  color: white;
+  font-weight: lighter;
+  font-size: 1em;
+  text-align: center;
+  font-family: abel;
+  margin-right: 1%;
+  padding: 1em;
+}
+
+.flex-item-img1 {
+  padding: 5px;
+  width: 200px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-image: url("../img/chaintop.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 40%;
+
+}
+
+.flex-item-img2 {
+  padding: 5px;
+  width: 200px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-image: url("../img/chainbottom.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 40%;
+
+}
+
+.flex-item:hover {
+  background: #114A52;
+}
+
+.flex-container a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.flex-item img {
+  max-width: 30%;
+  max-height: 30%;
+  display: block;
+}
+
+
+
+
+
+
+
+/* Menu / Navigation Styling */
+
+
+
+
+/* Page Layout Styling (Grid layout, paddings, margins, text style, image, figure caption) */
+.grid-container {
+  display: grid;
+  align-items: center;
+  font-family: abel;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin bottom: 10px;
+  overflow-x: hidden;
+  text-align: left;
+
+}
+
+.grid-fullwidth {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-items: center;
+  width: 85%;
+
+}
+
+.grid-2-3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+
+.grid-1-3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 3%;
+
+}
+
+.grid-2-4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: #ECEEEC;
+  padding: 2%;
+
+}
+
+.grid-1-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-right: 15px;
+}
+
+.grid-1-2 img {
+  max-width: 90%;
+}
+
+.grid-3-4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+
+.grid-container h1 {
+  margin-top: 1%;
+  margin-block-start: 15px;
+  margin-block-end: 0px;
+  font-size: 2.8em;
+}
+
+.grid-container h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 2em;
+}
+
+.grid-container h3 {
+  margin-top: 1%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 1.5em;
+}
+
+.grid-container h4 {
+  margin-top: 1%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 1.2em;
+}
+
+
+/*Footer Styling*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 50px;
+}
+
+.footer img {
+  width: auto;
+  height: 20px;
+  float: right;
+  margin-right: 2%;
+}
+
+
+
+@media all and (max-width: 800px) {
+  .navbar a {
+    padding: 1em;
+  }
+
+  .navbar {
+    margin-bottom: 60px;
+    font-size: 0.9em;
+  }
+
+  .grid-1-3 {
+    font-size: 0.9em;
+    margin-top: 60px;
+  }
+
+}
+
+@media all and (max-width: 1200px) {
+  .flex-item-img1 {
+    display: none;
+  }
+  .flex-item-img2 {
+    display: none;
+  }
+}
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../parallax.jpg");
+  min-height: 400px;
+}
+
+.bgimg-2 {
+  background-image: url("../parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
